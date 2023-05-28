@@ -1,0 +1,56 @@
+.QuizContener{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 173, 127);
+    .Game{
+        width: 400px; 
+        height: 400px;
+        background-color: white;
+        border-radius: 50px;
+        text-align: center;
+        padding: 10px;
+        .Progres{
+            height: 10px;
+            background-color: #ccc;
+            position: relative;
+            margin-top: 40px;
+            border-radius: 5px;
+            .ProgresLiner{
+                position: absolute;
+                height: 100%;
+                border-radius: 5px;
+                background-color: rgb(97, 211, 97);
+                transition: all 2s ease-in-out;
+            }
+        }
+        ul{
+            list-style: none;
+
+            li{
+                width: 80%;
+                height: 20px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 10px 8px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                text-align: start;
+            }
+            li:hover{
+                border: 1px solid black;
+            }
+        }
+
+    }
+    .GameOver{
+        width: 400px; 
+        height: 400px;
+        background-color: rgb(229, 247, 66);
+        border-radius: 50px;
+        text-align: center; 
+        transition: all 3s ease-in-out;
+    }
+}

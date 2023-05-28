@@ -1,0 +1,9 @@
+.defaltStyalButton{
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    background-color: rgb(32, 76, 158);
+    border-radius: 10px;
+    border: none;
+}

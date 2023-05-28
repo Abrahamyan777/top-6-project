@@ -1,0 +1,8 @@
+.footerContener{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(38, 22, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

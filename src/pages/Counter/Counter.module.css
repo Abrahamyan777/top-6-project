@@ -1,0 +1,16 @@
+.counterContener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+.counterContener button{
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    background-color: coral;
+    border-radius: 10px;
+    border: none;
+}

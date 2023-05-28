@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Layout from './componets/Layout/Layout';
+import Aboutpage from './pages/Aboutpage/Aboutpage';
+import Blogpage from './pages/Blogpage/Blogpage';
+import Counter from './pages/Counter/Counter';
+import Homepage from './pages/Homepage/HomePage';
+import Modal from './pages/Modalpage/Modalpage';
+import NotFoundpage from './pages/NotFoundpage/NotFoundpage';
+import Quiz from './pages/Quiz/Quiz';
+import UsersPage from './pages/UsersPage/UsersPage';
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route  index element={<Homepage />} />
+                    <Route  path='/home' element={<Homepage />} />
+                    <Route path="/blog" element={<Blogpage />} />
+                    <Route path="/about" element={<Aboutpage />} />
+                    <Route path="/counter" element={<Counter />} />
+                    <Route path="/modal" element={<Modal />} />
+                    <Route path="/quiz" element={<Quiz />} />
+                    <Route path="/users" element={<UsersPage />} />
+                    <Route path="*" element={<NotFoundpage />} />
+                </Route>
+            </Routes> 
     </div>
   );
 }
